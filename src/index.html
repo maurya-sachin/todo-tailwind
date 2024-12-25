@@ -1,16 +1,35 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./index.css" rel="stylesheet">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-    <h1 class="">
-        Hello world!
-    </h1>
+<body
+    class="bg-gradient-to-br from-purple-300 to-indigo-500 dark:from-gray-900 dark:to-gray-800 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-md w-full bg-white/30 dark:bg-gray-800/40 backdrop-blur-lg rounded-3xl shadow-lg p-8">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white">To-Do List</h1>
+            <button id="theme-toggle"
+                class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+                🌙
+            </button>
+        </div>
+
+        <div class="flex mb-4">
+            <input type="text" placeholder="Add a new task" id="task-input"
+                class="flex-grow px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white/60 dark:bg-gray-700 text-gray-800 dark:text-gray-200 placeholder-gray-500 dark:placeholder-gray-400">
+            <button id="add-task"
+                class="ml-2 px-4 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition">Add</button>
+        </div>
+
+        <ul class="space-y-3" id="task-list"></ul>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

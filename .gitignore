@@ -1,1 +1,16 @@
-node_modules
+# Node.js dependencies
+/node_modules
+
+# npm package lock file
+/package-lock.json
+
+# Tailwind CSS output file
+/src/style.css
+
+# Parcel cache and build output
+/.parcel-cache
+/dist
+
+# IDE or editor files
+.vscode
+.idea
